@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Desafio #16 do Maujor</title>
+<style>
+/* Regras de estilo devem ser inseridas aqui */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 10px;
+}
+a {	
+	position: relative;
+	z-index: 100;
+	color: #FFF;
+}
+div {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;		
+}
+div#red { background: red; display: block; }
+div#green { background: green; }
+div#blue { background: blue; }
+div:target { display: block; }
+</style>
+</head>
+<body>
+<!--
+Use apenas os 3 elementos A e os 3 DIV's constantes da marcação a seguir.
+Não acrescente novos elementos na marcação (tanto na seção BODY como na seção HEAD) 
+Em cada um dos 6 elementos da marcação, caso considere necessário, você pode inserir 
+UM atributo HTML válido e seu respectivo valor.
+--> 	
+
+	<a href="#red">RED</a>
+	<a href="#green">GREEN</a>
+	<a href="#blue">BLUE</a>
+	<div id="red"></div>
+	<div id="green"></div>
+	<div id="blue"></div>
+
+</body>
+</html>

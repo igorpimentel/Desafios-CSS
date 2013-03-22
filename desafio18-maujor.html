@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Imagem com linear-gradient das CSS3</title>
+<style type="text/css">
+  /* insira a folha de estilo aqui */
+  body { margin: 0; padding: 0; }  
+  div {
+  	width: 660px;
+  	height: 347px;
+  	
+  	background-color: #0081b9;   	
+	background-repeat: no-repeat;		
+  	background-size: 72px 126px;
+  	  	
+  	background-image:  		
+  		linear-gradient(-240.5deg, transparent 62px, #007a34 62px, #007a34),
+  		linear-gradient(240.5deg, transparent 62px, #007a34 62px, #007a34),
+  		
+  		linear-gradient(-240.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		linear-gradient(240.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		
+  		linear-gradient(60.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		linear-gradient(-60.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),  		
+  		
+  		linear-gradient(60.5deg, transparent 62px, #007a34 62px, #007a34),
+  		linear-gradient(-60.5deg, transparent 62px, #007a34 62px, #007a34),
+  		
+  		linear-gradient(-240.5deg, transparent 62px, #007a34 62px, #007a34),
+  		linear-gradient(240.5deg, transparent 62px, #007a34 62px, #007a34),
+  		
+  		linear-gradient(-240.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		linear-gradient(240.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		
+  		linear-gradient(60.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		linear-gradient(-60.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		
+  		linear-gradient(60.5deg, transparent 62px, #007a34 62px, #007a34),
+  		linear-gradient(-60.5deg, transparent 62px, #007a34 62px, #007a34),
+  		
+  		linear-gradient(-60.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		linear-gradient(-240.5deg, transparent 62px, #a1a2a3 62px, #a1a2a3),
+  		
+  		linear-gradient(-240.5deg, #007a34 100%, #007a34),
+  		linear-gradient(-240.5deg, #007a34 100%, #007a34),
+  		linear-gradient(-240.5deg, #007a34 100%, #007a34),
+  		linear-gradient(-240.5deg, #007a34 100%, #007a34),
+  		
+  		linear-gradient(-240.5deg, #007a34 100%, #007a34),
+  		linear-gradient(-240.5deg, #007a34 100%, #007a34),
+  		linear-gradient(-240.5deg, #007a34 100%, #007a34),
+  		linear-gradient(-240.5deg, #007a34 100%, #007a34);
+			
+	background-position:
+		5px -14px,
+		221px -14px,	
+			
+		293px -14px,
+		365px -14px,
+				
+		509px -14px,
+		581px -14px,		
+		
+		5px 112px,
+		221px 112px,
+		
+		365px 112px,
+		581px 112px,
+		
+		5px 238px,
+		77px 238px,
+		
+		221px 238px,
+		293px 238px,
+		
+		365px 238px,
+		581px 238px,
+		
+		-67px 112px,
+		652px 112px,
+		
+		77px 0,
+		149px 0,
+		77px 112px,
+		149px 112px,
+		
+		437px 112px,
+		509px 112px,
+		437px 238px,
+		509px 238px;
+  }
+  
+  /* EXTRA: Textos “20 de marco de 2013″, “CSS3″ bem como o título da matéria */
+  div:after {
+	content: "20 de março de 2013";	
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	font: 0.8em Helvetica,arial,tahoma,Sans-serif;
+	left: 15px;
+	padding: 7px 10px;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+  }
+  div:before {
+	content: "CSS3";	
+	background-color: #FFFFFF;
+	color: #D71E24;
+	font: 1em Helvetica,arial,tahoma,Sans-serif;	
+	padding: 15px 30px 0;	
+	position: absolute;
+	left: 0;
+	top: 315px;
+	text-decoration: none;
+	text-transform: uppercase;	
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+  }
+  body:after { 
+	content: "Como usar linear-gradient em CSS de forma consciente?";	
+	color: #1F1F1F;
+	text-decoration: none;
+	font: 100 2.3em arial,tahoma,Sans-serif;
+	letter-spacing: -1px;
+	width: 660px;
+	margin-bottom: 25px;
+	padding: 0 30px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	position: absolute;
+	left: 0;
+	top: 388px;
+  }
+</style>
+</head>
+<body>
+  <!-- insira aqui tantos elementos div quanto necessários -->
+  <div></div>
+</body>
+</html>

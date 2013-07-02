@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Desafio CSS 04 - @igorpimentel</title>
+<style>
+html { background-color: #FFF; }
+body {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	background-color: #E30917;	
+  	background-image: 
+		-moz-radial-gradient(237px 200px, circle, #E30917 0, #E30917 80px, transparent 80px, transparent 100%),
+		-moz-radial-gradient(212px 200px, circle, #FFF 0, #FFF 100px, transparent 100px, transparent 100%);
+	background-image: 
+		-webkit-radial-gradient(237px 200px, circle, #E30917 0, #E30917 80px, transparent 80px, transparent 100%),
+		-webkit-radial-gradient(212px 200px, circle, #FFF 0, #FFF 100px, transparent 100px, transparent 100%);
+	background-image:
+		radial-gradient(237px 200px, circle, #E30917 0, #E30917 80px, transparent 80px, transparent 100%),
+		radial-gradient(212px 200px, circle, #FFF 0, #FFF 100px, transparent 100px, transparent 100%);
+    background-repeat: no-repeat;
+}
+.turquia {
+	display: block;
+	position: absolute;
+	top: 180px;
+	left: 295px;
+	width: 0px;
+	height: 0px;
+	border-bottom: 34px solid #FFF;
+	border-right: 47px solid transparent;
+	border-left: 47px solid transparent;
+	transform: rotate(18deg);
+	-moz-transform: rotate(18deg);
+	-webkit-transform: rotate(18deg);
+}
+.turquia:before {
+	content:"";
+	display: block;
+	position: absolute;
+	top: -24px;
+	left: -30px;		
+	width: 0;
+	height: 0;
+	border-bottom: 35px solid #FFF;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;	
+	transform: rotate(-35deg);
+	-webkit-transform: rotate(-35deg);
+	-moz-transform: rotate(-35deg);
+}
+.turquia:after {
+	content:"";
+	display: block;
+	position: absolute;	
+	top: 0;
+	left: -48px;
+	width: 0px;
+	height: 0px;
+	border-bottom: 34px solid #FFF;
+	border-right: 47px solid transparent; 	
+	border-left: 47px solid transparent;
+	transform: rotate(-72deg);
+	-webkit-transform: rotate(-72deg);
+	-moz-transform: rotate(-72deg);
+}
+</style>
+</head>
+<body>
+<div class="turquia"></div>
+</body>
+</html>
